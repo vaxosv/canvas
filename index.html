@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script src="./p5.min.js"></script>
+    <!-- <script>
+        var img
+        function preload() {
+            img = loadImage('../download.png');
+        }
+
+        function setup() {
+            createCanvas(windowWidth - 10, windowHeight - 20)
+            image(img, 0, 0);
+        }
+
+        let arr = []
+        let loc = 0
+        let i = 0
+
+
+
+        function draw() {
+            background(255)
+
+            let mx = mouseX
+            let my = mouseY
+
+            i += 0.1
+            let x = Math.sin(i) * 40 + mx
+            let y = Math.cos(i) * 40 + my
+
+            let xz = Math.sin(i) * 10 + mx
+            let yz = Math.cos(i) * 10 + my
+
+            arr.push(ellipse(xz, yz, 20))
+            arr.push(rect(x, y, 10, 10))
+            loc += 5
+            text("sheqmnili obieqtebis odenoba: " + arr.length, 100, 10)
+            if (loc >= windowWidth) {
+                loc = !loc
+            }
+
+            if (arr.length >= 1) {
+                arr.splice(0, 1)
+                arr.splice(0, 1)
+            }
+        }
+
+        function Circle() {
+            fill(random(0, 255))
+
+        }
+    </script> -->
+
+
+    <script>
+        var img;
+        let c;
+        let mytext = prompt()
+
+
+        function preload() {
+            img = loadImage('./Abstract_Square_Art.png');
+        }
+
+        function setup() {
+            c = createCanvas(windowWidth, windowHeight)
+            image(img, 0, 0, windowWidth, windowHeight)
+        }
+
+        function draw() {
+
+        }
+
+        function mousePressed() {
+            let x = mouseX
+            let y = mouseY
+            textSize(44)
+            text(mytext, x, y)
+        }
+
+        function doubleClicked() {
+            saveCanvas(c, 'myCanvas', 'jpg');
+        }
+    </script>
+</body>
+
+</html>
